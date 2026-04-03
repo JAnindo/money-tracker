@@ -12,6 +12,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('password'); // Back for real this time!
             $table->timestamps();
         });
     }
