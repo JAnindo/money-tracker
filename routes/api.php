@@ -16,4 +16,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/wallets',          [WalletController::class, 'store']);
     Route::get('/wallets/{id}',      [WalletController::class, 'show']);
     Route::post('/transactions',     [TransactionController::class, 'store']);
+    Route::delete('/wallets/{id}', [WalletController::class, 'destroy']);
 });
